@@ -10,8 +10,7 @@ router.get('/', async (req, res) => {
     const categoryData = await Category.findAll({
       // JOIN with products, using the through table
       include: [{
-        model: Product,
-        required: true,
+        model: Product
       }]
     });
     res.status(200).json(categoryData);
@@ -20,12 +19,15 @@ router.get('/', async (req, res) => {
   }
 
   console.log("Category GET Request")
+}).then(function (seedProducts) {
+  JSON.stringify(seedProducts)
+  console.log(JSON.stringify(seedProducts))
 });
 
 router.get('/:id', async (req, res) => {
   // GET one category by its `id` value: be sure to include its associated Products
   try {
-    const categoryData = await Category.findByPk(req.params, id, {
+    const categoryData = await Category.findByPk(req.params.id, {
       // JOIN with products, using the through table
       include: [{
         model: Product
@@ -42,6 +44,9 @@ router.get('/:id', async (req, res) => {
     res.status(500).json(err);
   }
   console.log("Category id GET Request")
+}).then(function(seedProducts) {
+  JSON.stringify(seedProducts)
+  console.log(JSON.stringify(seedProducts))
 });
 
 router.post('/', async (req, res) => {
