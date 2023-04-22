@@ -7,9 +7,13 @@ const seedProducts = require('../../seeds/product-seeds');
 router.get('/', async (req, res) => {
   // GET all categories: be sure to include its associated Products
   try {
-    const categoryData = await Category.findAll(
+    const categoryData = await Category.findAll({
       // JOIN with products, using the through table
-    );
+      include: [{
+        model: Product,
+        required: true,
+      }]
+    });
     res.status(200).json(categoryData);
   } catch (err) {
     res.status(500).json(err);
@@ -23,11 +27,13 @@ router.get('/:id', async (req, res) => {
   try {
     const categoryData = await Category.findByPk(req.params, id, {
       // JOIN with products, using the through table
-      include [{ model: Product, through: Category }]
+      include: [{
+        model: Product
+      }]
     });
 
     if (!categoryData) {
-      res.status(404).json({ message: 'No category found with this id!' });
+      res.status(404).json({ message: 'No categories found with this id!' });
       return;
     }
 
