@@ -12,20 +12,20 @@ CREATE TABLE Category (
 );
 
 CREATE TABLE Product (
-    id INT AUTO_INCREMENT,
+    id INT AUTO_INCREMENT PRIMARY KEY,
     product_name VARCHAR(30) NOT NULL,
-    price ,
-    stock ,
-    category_id
+    price DECIMAL NOT NULL, -- Validates that the value is a decimal
+    stock INT(10) NOT NULL, -- Validates that the value is numeric
+    category_id INT FOREIGN KEY (category_id) REFERENCES Category(id)
 );
 
 CREATE TABLE Tag (
-    id ,
-    tag_name 
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    tag_name VARCHAR(30)
 );
 
 CREATE TABLE ProductTag (
-    id ,
-    product_id,
-    tag_id
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    product_id INT FOREIGN KEY (product_id) REFERENCES Product(id),
+    tag_id INT FOREIGN KEY (tag_id) REFERENCES Tag(id)
 );
