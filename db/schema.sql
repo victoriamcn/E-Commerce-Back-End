@@ -27,14 +27,14 @@ CREATE DATABASE ecommerce_db;
    -- tag_name VARCHAR(30)
 -- );
 
-CREATE TABLE ProductTag (
-	id INT AUTO_INCREMENT PRIMARY KEY,
-	product_id INT,
-	FOREIGN KEY (product_id) 
-	REFERENCES Product (id)
-	ON DELETE CASCADE,
-	tag_id INT, 
-	FOREIGN KEY (tag_id)
-	REFERENCES Tag (id)
-	ON DELETE CASCADE
-);
+--CREATE TABLE ProductTag (
+	--id INT AUTO_INCREMENT PRIMARY KEY,
+	--product_id INT,
+	--mFOREIGN KEY (product_id) 
+	--REFERENCES Product (id)
+	--ON DELETE CASCADE,
+	--tag_id INT, 
+	--FOREIGN KEY (tag_id)
+	--REFERENCES Tag (id)
+	--ON DELETE CASCADE
+---);
