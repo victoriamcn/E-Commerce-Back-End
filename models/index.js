@@ -9,7 +9,6 @@ const seedTags = require('../seeds/tag-seeds');
 // Products belongsTo Category
 Product.belongsTo(Category, {
   foreignKey: 'id',
-  onDelete: 'CASCADE'
 })
 
 // Categories have many Products
@@ -23,6 +22,7 @@ Category.hasMany(Product, {
 Product.belongsToMany(Tag, {
   through: ProductTag,
   foreignKey: 'product_id',
+  //as: "productsWithTags"
 })
 
 // Tags belongToMany Products (through ProductTag)
@@ -30,6 +30,7 @@ Product.belongsToMany(Tag, {
 Tag.belongsToMany(Product, {
   through: ProductTag,
   foreignKey: 'tag_id',
+  //as: "tagsForProducts"
 })
 
 

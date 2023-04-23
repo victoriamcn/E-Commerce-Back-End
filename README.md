@@ -12,31 +12,31 @@ This application is the back end for an e-commerce site by modifying starter cod
 - [Credits](#credits)
 
 ## User Story
-
-
-## Installation
-
-In order to install the following, please use:
 ```
-npm i inquirer@8.2.4
-```
-```
-npm i inquirer@8.2.4
-```
-```
-npm i inquirer@8.2.4
+AS A manager at an internet retail company
+I WANT a back end for my e-commerce website that uses the latest technologies
+SO THAT my company can compete with other e-commerce companies
 ```
 
-## Usage
+## Installation and Usage
 
 1. Clone this repository to your local computer.
 2. Open the repo in VS Code.
-3. Open the index.js file in the Integrated Terminal.
-4. Once you have installed inquirer, type the following in the command line:
+3. Open the server.js file in the Integrated Terminal.
+4. Create your own .env file in the repo using the following syntax and your own username and password for ***MySQL***:
+```
+DB_NAME='traveller_db'
+DB_PASSWORD='example'
+DB_USER='example'
+```
+5. ***Install** all dependencies: type the following in the command line:
 ```
 npm i
 ```
-6. 
+6. ***Seed*** the ecommerce_db database: type the following in the command line:
+```
+npm run seed
+```
 7. 
 
 ## Demo
