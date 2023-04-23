@@ -19,10 +19,11 @@ router.get('/', async (req, res) => {
   }
 
   console.log("Category GET Request")
-}).then(function (seedProducts) {
-  JSON.stringify(seedProducts)
-  console.log(JSON.stringify(seedProducts))
-});
+})
+// .then(function (seedProducts) {
+//   JSON.stringify(seedProducts)
+//   console.log(JSON.stringify(seedProducts))
+// });
 
 router.get('/:id', async (req, res) => {
   // GET one category by its `id` value: be sure to include its associated Products
@@ -44,10 +45,11 @@ router.get('/:id', async (req, res) => {
     res.status(500).json(err);
   }
   console.log("Category id GET Request")
-}).then(function(seedProducts) {
-  JSON.stringify(seedProducts)
-  console.log(JSON.stringify(seedProducts))
-});
+})
+// .then(function(seedProducts) {
+//   JSON.stringify(seedProducts)
+//   console.log(JSON.stringify(seedProducts))
+// });
 
 router.post('/', async (req, res) => {
   // create a new category

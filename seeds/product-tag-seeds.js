@@ -1,4 +1,4 @@
-const { ProductTag } = require('../../GT-VIRT-FSF-PT-01-2023-U-LOLC/13-ORM/02-Challenge/Develop/models');
+const { ProductTag } = require('../models');
 
 const productTagData = [
   {
