@@ -21,23 +21,15 @@ Category.hasMany(Product, {
 // Products belongToMany Tags (through ProductTag)
 //third table needed to store the foreign keys
 Product.belongsToMany(Tag, {
-  through: {
-    model: ProductTag,
-    unique: false,
-    onDelete: 'CASCADE'
-  }//,
-  // Define an alias for when data is retrieved
-  //as: 'product_tags'
+  through: ProductTag,
+  foreignKey: 'product_id',
 })
 
 // Tags belongToMany Products (through ProductTag)
 //third table needed to store the foreign keys
 Tag.belongsToMany(Product, {
-  through: {
-    model: ProductTag,
-    unique: false,
-    onDelete: 'CASCADE'
-  }
+  through: ProductTag,
+  foreignKey: 'tag_id',
 })
 
 
