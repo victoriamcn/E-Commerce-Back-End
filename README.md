@@ -23,21 +23,27 @@ SO THAT my company can compete with other e-commerce companies
 1. Clone this repository to your local computer.
 2. Open the repo in VS Code.
 3. Open the server.js file in the Integrated Terminal.
-4. Create your own .env file in the repo using the following syntax and your own username and password for **MySQL**:
+4. **Create your own .env file:**
+- Add new file called ```.env```
+- Use following syntax in your .env file with your own username and password for ```MySQL``` instead of "example":
 ```
 DB_NAME='traveller_db'
 DB_PASSWORD='example'
 DB_USER='example'
 ```
-5. **Install** all dependencies: type the following in the command line:
+5. **Install all dependencies:** type the following in the command line:
 ```
 npm i
 ```
-6. **Seed** the ecommerce_db database: type the following in the command line:
+6. **Seed the ecommerce_db database:** type the following in the command line:
 ```
 npm run seed
 ```
-7. 
+7. **Start the Server:**  type the following in the command line:
+```
+npm start
+```
+8. 
 
 ## npm packages
 - [mysql2](https://www.npmjs.com/package/mysql2)
@@ -61,7 +67,9 @@ To view my other projects, you may visit my Git Hub profile: [victoriamcn](https
 
 ## License
 
-**This project is licensed under MIT.** [Click](https://pitt.libguides.com/openlicensing/MIT#:~:text=Users%20of%20software%20using%20an,and%20the%20X%20Windows%20System.) here to view the license documentation or go to the [license file](https://github.com/victoriamcn/E-Commerce-Back-End/blob/main/LICENSE) in this repository.
+This project is licensed under MIT.
+- [Click](https://pitt.libguides.com/openlicensing/MIT#:~:text=Users%20of%20software%20using%20an,and%20the%20X%20Windows%20System.) here to view the license documentation or,
+- Go to the [license file](https://github.com/victoriamcn/E-Commerce-Back-End/blob/main/LICENSE) in this repository.
 
 ## Credits
 
