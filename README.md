@@ -23,17 +23,17 @@ SO THAT my company can compete with other e-commerce companies
 1. Clone this repository to your local computer.
 2. Open the repo in VS Code.
 3. Open the server.js file in the Integrated Terminal.
-4. Create your own .env file in the repo using the following syntax and your own username and password for ***MySQL***:
+4. Create your own .env file in the repo using the following syntax and your own username and password for **MySQL**:
 ```
 DB_NAME='traveller_db'
 DB_PASSWORD='example'
 DB_USER='example'
 ```
-5. ***Install** all dependencies: type the following in the command line:
+5. **Install** all dependencies: type the following in the command line:
 ```
 npm i
 ```
-6. ***Seed*** the ecommerce_db database: type the following in the command line:
+6. **Seed** the ecommerce_db database: type the following in the command line:
 ```
 npm run seed
 ```
