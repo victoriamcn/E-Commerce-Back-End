@@ -32,7 +32,7 @@ Product.init(
       // FOREIGN KEY (category_id) REFERENCES Category(id)
       type: DataTypes.INTEGER,
       references: {
-        model : 'Category',
+        model : 'category',
         key: 'id',
         unique: false
       }
