@@ -3,8 +3,8 @@ This application is the back end for an e-commerce site by modifying starter cod
 
 ## Table of Contents
 - [User Story](#user-story)
-- [Installation](#installation)
-- [Usage](#usage)
+- [Installation and Usage](#installation-and-usage)
+- [npm packages](#npm-packages)
 - [Demo](#demo)
 - [Contributing](#contributing)
 - [Questions](#questions)
@@ -39,6 +39,11 @@ npm run seed
 ```
 7. 
 
+## npm packages
+- [mysql2](https://www.npmjs.com/package/mysql2)
+- [sequelize](https://www.npmjs.com/package/sequelize)
+- [dotenv](https://www.npmjs.com/package/dotenv)
+
 ## Demo
 
 Click to watch the [demo on YouTube]().
@@ -56,7 +61,7 @@ To view my other projects, you may visit my Git Hub profile: [victoriamcn](https
 
 ## License
 
-***This project is licensed under MIT.*** [Click](https://pitt.libguides.com/openlicensing/MIT#:~:text=Users%20of%20software%20using%20an,and%20the%20X%20Windows%20System.) here to view the license documentation or go to the [license file](https://github.com/victoriamcn/Employee-Management-System/blob/main/LICENSE) in this repository.
+**This project is licensed under MIT.** [Click](https://pitt.libguides.com/openlicensing/MIT#:~:text=Users%20of%20software%20using%20an,and%20the%20X%20Windows%20System.) here to view the license documentation or go to the [license file](https://github.com/victoriamcn/E-Commerce-Back-End/blob/main/LICENSE) in this repository.
 
 ## Credits
 
