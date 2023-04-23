@@ -23,27 +23,31 @@ SO THAT my company can compete with other e-commerce companies
 1. Clone this repository to your local computer.
 2. Open the repo in VS Code.
 3. Open the server.js file in the Integrated Terminal.
-4. **Create your own .env file:**
+4. Log-in to MySQL.
+5. **Create your own .env file:**
 - Add new file called ```.env```
 - Use following syntax in your .env file with your own username and password for ```MySQL``` instead of "example":
 ```
-DB_NAME='traveller_db'
+DB_NAME='ecommerce_db'
 DB_PASSWORD='example'
 DB_USER='example'
 ```
-5. **Install all dependencies:** type the following in the command line:
+6. **Install all dependencies:** type the following in the command line:
 ```
 npm i
 ```
-6. **Seed the ecommerce_db database:** type the following in the command line:
+7. **Seed the ecommerce_db database:** type the following in the command line:
 ```
 npm run seed
 ```
-7. **Start the Server:**  type the following in the command line:
+8. **Start the Server:**  type the following in the command line:
 ```
 npm start
 ```
-8. 
+9. **Test The Endpoints**
+- I used Insomnia to test my endpoints.
+- You can download Insomnia for free on your local computer [here](https://insomnia.rest/pricing).
+- You may read the documentation for Insomnia [here](https://docs.insomnia.rest/insomnia/get-started).
 
 ## npm packages
 - [mysql2](https://www.npmjs.com/package/mysql2)
