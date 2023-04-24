@@ -57,7 +57,7 @@ DB_USER='example'
 
 ## Demo
 
-Click to watch the [demo on YouTube]().
+Click to watch the [demo on YouTube](https://youtu.be/A8sULMKTjvg).
 
 ## Contributing
 
