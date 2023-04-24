@@ -8,6 +8,7 @@ router.get('/', async (req, res) => {
   // GET all products: be sure to include its associated Category and Tag data
   try {
     const productsData = await Product.findAll({
+      // JOIN 
       include: [{
         model: Category
       },
@@ -29,6 +30,7 @@ router.get('/:id', async (req, res) => {
   // be sure to include its associated Category and Tag data
   try {
     const productsData = await findByPk(req.params.id, {
+      // JOIN 
       include: [{
         model: Category
       },
@@ -79,6 +81,7 @@ router.post('/', (req, res) => {
       console.log(err);
       res.status(400).json(err);
     });
+  console.log("Product POST Request")
 });
 
 // update product
@@ -121,10 +124,28 @@ router.put('/:id', async (req, res) => {
       // console.log(err);
       res.status(400).json(err);
     });
+  console.log("Product PUT id Request")
 });
 
-router.delete('/:id', (req, res) => {
+router.delete('/:id', async (req, res) => {
   // delete one product by its `id` value
+  try {
+    const productData = await Product.destroy({
+      where: {
+        id: req.params.id
+      }
+    });
+
+    if (!productData) {
+      res.status(404).json({ message: 'No products found with this id!' });
+      return;
+    }
+
+    res.status(200).json(productData);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+  console.log("Product DELETE id Request")
 });
 
 module.exports = router;
