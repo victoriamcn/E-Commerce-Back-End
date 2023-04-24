@@ -10,10 +10,12 @@ router.get('/', async (req, res) => {
     const productsData = await Product.findAll({
       // JOIN 
       include: [{
-        model: Category
+        model: Category,
+        attributes: ['category_name']
       },
       {
-        model: Tag
+        model: Tag,
+        attributes: ['tag_name']
       }]
     });
     res.status(200).json(productsData);
@@ -32,10 +34,12 @@ router.get('/:id', async (req, res) => {
     const productsData = await findByPk(req.params.id, {
       // JOIN 
       include: [{
-        model: Category
+        model: Category,
+        attributes: ['category_name']
       },
       {
-        model: Tag
+        model: Tag,
+        attributes: ['tag_name']
       }]
     });
 
@@ -51,8 +55,7 @@ router.get('/:id', async (req, res) => {
   console.log("Product id GET Request")
 });
 
-// create new product
-router.post('/', (req, res) => {
+
   /* req.body should look like this...
     {
       product_name: "Basketball",
@@ -61,6 +64,8 @@ router.post('/', (req, res) => {
       tagIds: [1, 2, 3, 4]
     }
   */
+// create new product
+router.post('/', (req, res) => {
   Product.create(req.body)
     .then((product) => {
       // if there's product tags, we need to create pairings to bulk create in the ProductTag model
