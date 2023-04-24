@@ -80,8 +80,27 @@ This project is licensed under MIT.
 
 ### Georgia Tech Staff
 - My instructor, [Saurav Khatiwada](https://github.com/khatiwadasaurav).
-- My tutors, !!!!!!!! .
+- My tutors: Andres Jimenez and Byron Brown.
 
 ### Example Code
+- BennAsabir on GitHub [e-commerce-backend/routes/api/product-routes.js](https://github.com/BennAsabir/e-commerce-backend/blob/main/routes/api/product-routes.js)
+- wyork on GitHub: [will-ecom/models/](https://github.com/wyork63/will-ecom/tree/main/models)
 
 ### Tutorials
+- educative: [What is sequelize.js?](https://www.educative.io/answers/what-is-sequelizejs)
+- freecodecamp: [What is an ORM – The Meaning of Object Relational Mapping Database Tools](https://www.freecodecamp.org/news/what-is-an-orm-the-meaning-of-object-relational-mapping-database-tools/#:~:text=Object%20Relational%20Mapping%20(ORM)%20is,(OOP)%20to%20relational%20databases.)
+- Insomnia Documention: [How to use Insomnia to Test API Endpoints](https://dev.to/kmcknight91/how-to-use-insomnia-to-test-api-endpoints-1lad)
+- Insomnia Documention:  [Send Your First Request](https://docs.insomnia.rest/insomnia/send-your-first-request#api-request-basics)
+- Medium: [ORM: Rethinking Data as Objects](https://blog.yellowant.com/orm-rethinking-data-as-objects-8ddaa43b1410)
+- Sequelize Documentation: [Associations](https://sequelize.org/v3/docs/associations/#one-to-many-associations)
+- Sequelize Documentation: [Class Model](https://sequelize.org/v3/api/model/)
+- Sequelize Documentation: [Model Querying - Basics](https://sequelize.org/docs/v6/core-concepts/model-querying-basics/)
+- Stack Overflow: [Accessing non-existent property 'padLevels' of module exports inside circular dependency](https://stackoverflow.com/questions/64713565/accessing-non-existent-property-padlevels-of-module-exports-inside-circular-de)
+- Stack Overflow: [Cannot delete or update a parent row: a foreign key constraint fails](https://stackoverflow.com/questions/1905470/cannot-delete-or-update-a-parent-row-a-foreign-key-constraint-fails)
+- Stack Overflow: [Can't drop table: A foreign key constraint fails](https://stackoverflow.com/questions/11100911/cant-drop-table-a-foreign-key-constraint-fails)
+- Stack Overflow: [How to use Sequelize belongsToMany associations?](https://stackoverflow.com/questions/29680359/how-to-use-sequelize-belongstomany-associations)
+- Stack Overflow:  [Sequelize.js onDelete: 'cascade' is not deleting records sequelize](https://stackoverflow.com/questions/23128816/sequelize-js-ondelete-cascade-is-not-deleting-records-sequelize)
+- test []()
+- test []()
+- The Server Side: [object-relational mapping (ORM)](https://www.theserverside.com/definition/object-relational-mapping-ORM)
+- YouTube: [Learn Sequelize ORM on Node.js with MySQL From Scratch in One Video by CoderOne](https://www.youtube.com/watch?v=pxo7L5nd1gA)
